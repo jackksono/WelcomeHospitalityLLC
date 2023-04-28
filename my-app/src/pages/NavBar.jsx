@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
-//import Logo from ;
+import Logo from ".../Images/Logo"
 
 const NavBar = () => {
 
