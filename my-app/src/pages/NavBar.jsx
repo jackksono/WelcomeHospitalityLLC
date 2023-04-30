@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
-import Logo from ".../Images/Logo"
+import Logo from "../Images/Logo.png"
 
 const NavBar = () => {
 
@@ -15,7 +15,7 @@ const NavBar = () => {
           <div className="flex items-center gap-10">
             <img
               alt="logo"
-              //src={Logo}
+              src={Logo}
               onClick={() => navigate('/')}
               className="cursor-pointer"
             />
