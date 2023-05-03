@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
+import ContactUs from "./ContactUs";
+import AboutUs from "./AboutUs"
 import Logo from "../Images/Logo.png"
+
 
 const NavBar = () => {
 
@@ -10,26 +13,9 @@ const NavBar = () => {
 
     return (
         <>
-      <nav className="fixed w-screen bg-secondary-500 h-[80px] z-10 drop-shadow-xl">
+        <nav  className="fixed w-screen bg-secondary-500 h-[80px] z-10 drop-shadow-xl">
         <div className="flex justify-between w-full h-full px-20">
           <div className="flex items-center gap-10">
-            <img
-              alt="logo"
-              src={Logo}
-              onClick={() => navigate('/')}
-              className="cursor-pointer"
-            />
-            <Link
-              to="/"
-              onClick={() => setSelectedPage('home')}
-              className={`${
-                selectedPage === 'home'
-                  ? 'text-tertiary-500'
-                  : 'text-primary-500'
-              } hover:text-opacity-75`}
-            >
-              Home
-            </Link>
           </div>
           <div className="flex items-center gap-10">
             <Link to="/about-us">
@@ -42,9 +28,11 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-      </nav>
+        </nav>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/about-us" element={<AboutUs/>} />
       </Routes>
     </>
     )
