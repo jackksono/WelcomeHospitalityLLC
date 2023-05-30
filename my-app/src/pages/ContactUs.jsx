@@ -5,7 +5,7 @@ const ContactUs = () => {
 
     return (
     <div>
-        Hi
+        test
     </div>
     )
 }
