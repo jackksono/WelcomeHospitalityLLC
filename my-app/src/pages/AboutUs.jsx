@@ -5,10 +5,10 @@ const AboutUs = () => {
 
     return (
         <>
-        <div className="pt-20 bg-gray text-orange-500">
+        <div className="pt-20  text-orange-500">
             <div className="text-7xl text-center pt-10">Meet the Team!</div>
         </div>
-        <div className="pl-5 pr-20 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden bg-gray shadow pt-5">
+        <div className="pl-5 pr-20 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden shadow pt-5">
             <h1 className="text-2xl italic text-black">Michelle Tran
                 <p className="flex text-lg  not-italic pt-5">
                     Michelle is the founder and CEO of Warm Hospitality LLC. Starting in Garden Groven and 
@@ -23,7 +23,7 @@ const AboutUs = () => {
             <img className="rounded-lg h-96 shadow-xl ml-auto" src={logo} alt="MichellesIMG"></img> 
         </div>
 
-        <div className="pl-20 pr-5 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden bg-gray shadow pt-5">
+        <div className="pl-20 pr-5 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden  shadow pt-5">
             <img className="rounded-full w-96 h-96 shadow-xl" src={logo} alt="DonnasIMG"></img>
             <h1 className="text-2xl italic text-black">Donna
                 <p className="flex not-italic text-lg pt-5">
@@ -32,7 +32,7 @@ const AboutUs = () => {
             </h1>
         </div>
 
-        <div className="pl-5 pr-20 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden bg-gray shadow pt-5">
+        <div className="pl-5 pr-20 grid grid-cols-2 w-screen flex flex-col rounded-lg overflow-hidden shadow pt-5">
             <h1 className="text-xl italic text-black">Jack Sonoda
                 <p className="flex not-italic text-lg pt-5 text-black">
                 Hello - my name is Jack Sonoda. Previously, I was a scientist working in the research and development of new and upcoming 
