@@ -28,6 +28,7 @@ const ContactUs = () => {
             console.log(error.text);
         });
         e.target.reset();
+        setData("")
         showResult(true)
     };
 
@@ -40,7 +41,7 @@ const ContactUs = () => {
     return (
     <div className="pt-20 pl-10 text-3xl">
         <form className="" method="post" onSubmit={sendMail}>
-            <h1 className="text-orange-500 pl-10 text-7xl">Contact <span className="text-black">Here</span></h1>
+            <h1 className="text-red-500 pl-10 text-7xl">Contact <span className="text-black">Here</span></h1>
             <input className="m-5 w-6/12 p-5 flex border-solid border-2 border-black text-lg" 
                 type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="Enter name"/>
             <input className="m-5 w-6/12 p-5 flex border-solid border-2 border-black text-lg" 
