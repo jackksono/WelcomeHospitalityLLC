@@ -17,20 +17,25 @@ const ContactUs = () => {
         setData({...data, [name]:value})
     }
 
-    const form = useRef();
-
-    const sendMail = (e) => {
+    const sendMail = (e) => { //EmailJS documentation
         e.preventDefault()
 
-        emailjs.sendForm('service_0bd37pt', 'template_sasqli3', e.target, 'iauEh19za_KMIe1hP')
+        emailjs
+        .sendForm('service_0bd37pt', 'template_sasqli3', e.target, 'iauEh19za_KMIe1hP')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
-        e.target.reset()
+        e.target.reset();
         showResult(true)
     };
+
+    //hide successful submission
+
+    setTimeout(() => {
+        showResult(false)
+    }, 5000)
 
     return (
     <div className="pt-20 pl-10 text-3xl">
@@ -45,7 +50,7 @@ const ContactUs = () => {
             <textarea className="border-solid border-2 border-black m-5 w-6/12 p-5 flex border-solid text-lg" 
                 name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..."/>
             <button className=" flex content-center text-lg bg-cyan-500 text-black" type='submit'>Send</button>
-            <div className="">{result ? <Result/> : null}</div>
+            <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 
         </form>  
     </div>
     )
