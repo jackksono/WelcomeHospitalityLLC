@@ -36,7 +36,7 @@ const ContactUs = () => {
 
     setTimeout(() => {
         showResult(false)
-    }, 5000)
+    }, 10000)
 
     return (
     <div className="pt-20 pl-10 text-3xl">
