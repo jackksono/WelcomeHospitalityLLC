@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import ContactUs from "./ContactUs";
-import AboutUs from "./AboutUs"
-import Logo from "../Images/Logo.png"
+// import AboutUs from "./AboutUs"
+import Logo from '../Images/Logos/Logo.png'
 
 
 const NavBar = () => {
@@ -13,23 +13,23 @@ const NavBar = () => {
 
     return (
         <>
-        <nav  className="fixed w-screen bg-orange-300 h-[80px] z-10 drop-shadow-xl">
-        <div className="flex justify-between w-full h-full px-20">
-          <div className="flex items-center gap-10">
+        <nav  className="fixed w-screen top-0 left-0 bg-transparent h-[80px] z-10 drop-shadow-xl">
+        <div className="flex items-start justify-between w-full h-full">
+          <div className="flex items-center">
             <Link to="/">
-              <button className="bg-primary-500 text-secondary-500 hover:text-secondary-700">
-                Home
-              </button>
+              <img src={Logo} alt='Logo' className="lg:w-80 lg:h-40">
+              </img>
             </Link>
           </div>
-          <div className="flex items-center gap-10">
+          
+          <div className="flex items-center gap-10 lg:px-20">
             <Link to="/about-us">
-              <button className="bg-primary-500 text-secondary-500">
-                About Us
+              <button className="text-white">
+                Executive Leadership
               </button>
             </Link>
             <Link to="/contact-us">
-              <button>Contact Us</button>
+              <button className="text-white">Contact Us</button>
             </Link>
           </div>
         </div>
@@ -37,7 +37,6 @@ const NavBar = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs/>} />
-        <Route path="/about-us" element={<AboutUs/>} />
       </Routes>
     </>
     )

@@ -29,6 +29,7 @@ const ContactUs = () => {
         });
         e.target.reset();
         setData("")
+        setData({message:""})
         showResult(true)
     };
 
