@@ -40,7 +40,7 @@ const ContactUs = () => {
     }, 10000)
 
     return (
-    <div className="flex flex-col items-center justify-center h-screen text-3xl text-center">
+    <div className="flex flex-col items-center justify-center h-screen text-3xl text-center bg-stone-900">
         <h1 className="text-5xl text-black lg:pt-80">Contact <span className="text-black">Us</span></h1>
         <form className="" method="post" onSubmit={sendMail}>
             <div className="flex justify-between ">

@@ -3,7 +3,7 @@ import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import ContactUs from "./ContactUs";
 import Services from "./Services";
-// import AboutUs from "./AboutUs"
+import AboutUs from "./AboutUs"
 import Logo from '../Images/Logos/Logo.png'
 
 
@@ -64,6 +64,7 @@ const NavBar = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/about-us" element={<AboutUs/>}/>
       </Routes>
     </>
     )

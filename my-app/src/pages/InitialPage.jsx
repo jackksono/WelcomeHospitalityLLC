@@ -29,8 +29,8 @@ const InitialPage = ({ onFadeOutComplete }) => {
         fadeOut ? 'fade-out' : ''
       }`}
     >
-      <h1 className="flex items-center justify-center text-5xl italic text-white font-Nanum">
-        "A Warm Welcome from Experienced Professionals."
+      <h1 className="flex items-center justify-center text-5xl text-white font-Nanum ">
+        "A <span className='px-2 font-bold text-yellow-500'>Warm</span> Welcome from Experienced Professionals."
       </h1>
     </div>
   );

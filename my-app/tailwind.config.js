@@ -9,7 +9,9 @@ module.exports = {
     extend: {
       fontFamily:{
         sans: ["var(--font-sophia)", ...fontFamily.sans],
-        Nanum: ['Nanum Gothic']
+        Nanum: ['Nanum Gothic'],
+        
+        
       },
       backgroundImage: {
         'banner': "url('../src/Images//Logos/Banner.png')",
