@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import ContactUs from "./ContactUs";
+import Services from "./Services";
 // import AboutUs from "./AboutUs"
 import Logo from '../Images/Logos/Logo.png'
 
@@ -42,15 +43,19 @@ const NavBar = () => {
                   </button>
               </div>
 
-              <div className={`flex flex-row-reverse items-center gap-10 text-lg nav-links lg:pt-16 lg:pr-48 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
+              <div className={`flex flex-row-reverse items-center gap-16 text-lg nav-links lg:pt-16 lg:pr-52 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
                   <Link to="/about-us">
                     <button className="text-white font-Nanum">
-                      Executive Leadership
+                      About Us
                     </button>
+                  </Link>
+                  <Link to="/services">
+                    <button className="text-white font-Nanum">Services</button>
                   </Link>
                   <Link to="/contact-us">
                     <button className="text-white font-Nanum">Contact Us</button>
                   </Link>
+                  
               
               </div>
             </div>
@@ -58,6 +63,7 @@ const NavBar = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/services" element={<Services/>} />
       </Routes>
     </>
     )
