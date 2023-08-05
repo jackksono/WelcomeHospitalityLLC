@@ -1,5 +1,5 @@
-// InitialPage.js
 import React, { useEffect, useState } from 'react';
+import '../index.css'
 
 const InitialPage = ({ onFadeOutComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -7,7 +7,7 @@ const InitialPage = ({ onFadeOutComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFadeOut(true);
-    }, 3000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,8 +29,8 @@ const InitialPage = ({ onFadeOutComplete }) => {
         fadeOut ? 'fade-out' : ''
       }`}
     >
-      <h1 className="text-3xl italic text-white lg:pb-96 font-Nanum">
-        Experienced Professionals and<span className="italic"> Warm Hospitality.</span>
+      <h1 className="flex items-center justify-center text-5xl italic text-white font-Nanum">
+        "A Warm Welcome from Experienced Professionals."
       </h1>
     </div>
   );
