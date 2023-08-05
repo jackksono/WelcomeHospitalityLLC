@@ -11,26 +11,44 @@ const NavBar = () => {
     const [ selectedPage, setSelectedPage ] = useState()
     const navigate = useNavigate();
 
+    const onToggleMenu = () => {
+      const navLinks = document.querySelector('.nav-links')
+    // console.log(navLinks)
+    let tag = document.getElementById("menu")
+    // console.log(tag.name)
+    tag.name = tag.name === "close" ? "menu" : "close"
+    // console.log(navLinks.classList)
+    navLinks.classList.toggle('hidden')
+    }
+
     return (
         <>
-        <nav  className="fixed w-screen top-0 left-0 bg-transparent h-[80px] z-10 drop-shadow-xl">
+        <nav  className="fixed w-screen top-0 left-0 bg-transparent h-[150px] z-10 drop-shadow-xl">
         <div className="flex items-start justify-between w-full h-full">
           <div className="flex items-center">
             <Link to="/">
-              <img src={Logo} alt='Logo' className="lg:w-80 lg:h-40">
+              <img src={Logo} alt='Logo' className="lg:w-100 lg:h-60 lg:mb-20">
               </img>
             </Link>
           </div>
           
-          <div className="flex items-center gap-10 lg:px-20">
-            <Link to="/about-us">
-              <button className="text-white">
-                Executive Leadership
+          <div className="absolute top-0 mt-4 mr-8 text-4xl text-white duration-1000 lg:right-20 lg:pt-10">
+            <button >
+                <ion-icon name="menu" id="menu" onClick={onToggleMenu} className='focus:duration-1000'></ion-icon>
               </button>
-            </Link>
-            <Link to="/contact-us">
-              <button className="text-white">Contact Us</button>
-            </Link>
+          </div>
+
+          <div className="flex flex-row-reverse items-center hidden gap-20 text-lg nav-links lg:pt-16 lg:pr-48">
+          
+              <Link to="/about-us">
+                <button className="text-white">
+                  Executive Leadership
+                </button>
+              </Link>
+              <Link to="/contact-us">
+                <button className="text-white">Contact Us</button>
+              </Link>
+           
           </div>
         </div>
         </nav>
