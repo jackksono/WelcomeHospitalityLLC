@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-
+import Banner from '../Images/Banner.png'
 
 
 const Home = () => {
