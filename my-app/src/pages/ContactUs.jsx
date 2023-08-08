@@ -40,8 +40,9 @@ const ContactUs = () => {
     }, 10000)
 
     return (
-    <div className="flex flex-col items-center justify-center h-screen text-3xl text-center bg-stone-900">
-        <h1 className="text-5xl text-black lg:pt-80">Contact <span className="text-black">Us</span></h1>
+    <div className="flex flex-col items-center justify-center h-screen text-3xl text-center bg-stone-900 font-Italiana">
+        <h1 className="text-5xl text-white lg:pt-80">Contact <span className="text-white">Us</span></h1>
+        <p className="text-base text-white lg:pt-10">Please feel free to reach out with any questions here or email us at info@warmhospitalitygroup.com</p>
         <form className="" method="post" onSubmit={sendMail}>
             <div className="flex justify-between ">
                 <input className="flex p-5 m-5 text-lg border-2 border-black border-solid" 

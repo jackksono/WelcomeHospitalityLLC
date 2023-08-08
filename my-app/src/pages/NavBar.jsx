@@ -44,16 +44,18 @@ const NavBar = () => {
               </div>
 
               <div className={`flex flex-row-reverse items-center gap-16 text-lg nav-links lg:pt-16 lg:pr-52 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
-                  <Link to="/about-us">
-                    <button className="text-white font-Nanum">
-                      About Us
-                    </button>
+                 
+                 
+                  <Link to="/contact-us">
+                    <button className="text-white font-Italiana">Contact</button>
                   </Link>
                   <Link to="/services">
-                    <button className="text-white font-Nanum">Services</button>
+                    <button className="text-white font-Italiana">Services</button>
                   </Link>
-                  <Link to="/contact-us">
-                    <button className="text-white font-Nanum">Contact Us</button>
+                  <Link to="/about-us">
+                    <button className="text-white font-Italiana">
+                      About Us
+                    </button>
                   </Link>
                   
               

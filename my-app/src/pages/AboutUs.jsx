@@ -5,8 +5,8 @@ const AboutUs = () => {
 
     return (
         <>
-        <div className="flex h-screen bg-stone-900">
-            <p>Hello</p>
+        <div className="flex items-center justify-center h-screen text-3xl text-center bg-stone-900 font-Italiana">
+            <p className="text-white">WHO ARE WE</p>
         </div>
     </>
     )

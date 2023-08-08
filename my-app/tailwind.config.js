@@ -10,6 +10,7 @@ module.exports = {
       fontFamily:{
         sans: ["var(--font-sophia)", ...fontFamily.sans],
         Nanum: ['Nanum Gothic'],
+        Italiana: ['Italiana']
         
         
       },

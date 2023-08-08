@@ -25,12 +25,12 @@ const InitialPage = ({ onFadeOutComplete }) => {
 
   return (
     <div
-      className={`fixed w-screen h-screen bg-black flex items-center justify-center transition-opacity ${
+      className={`fixed w-screen h-screen bg-black bg-cover bg-center flex items-center justify-center transition-opacity ${
         fadeOut ? 'fade-out' : ''
       }`}
     >
-      <h1 className="flex items-center justify-center text-5xl text-white font-Nanum ">
-        "A <span className='px-2 font-bold text-yellow-500'>Warm</span> Welcome from Experienced Professionals."
+      <h1 className="flex items-center justify-center text-5xl text-white font-Italiana ">
+        "a <span className='px-2 font-bold text-amber-400 font-Italiana'>WARM</span> welcome from experienced professionals."
       </h1>
     </div>
   );
