@@ -24,16 +24,18 @@ const Home = () => {
       <>
       {showContent ? (
         <Fade duration={5000}>
-          <div className="fixed flex flex-col items-center justify-center w-screen h-screen bg-center bg-no-repeat bg-cover bg-banner drop-shadow-xl fade-in">
-            
-            {/* <div className="absolute left-0 items-center justify-center w-full bottom-20">
-              <div className="flex flex-row justify-center space-x-64">
-                <>
-                  <h1 className="text-7xl font-bold text-white duration-700 cursor-pointer hover:underline font-Nanum underline-offset-[20px]">CONCEPTS</h1>
-                  <h2 className="text-7xl font-bold text-white duration-700 cursor-pointer hover:underline font-Nanum underline-offset-[20px]" >MARKETING</h2>
-                </>
-              </div>
-            </div> */}
+          <div className="w-screen h-screen bg-gray-950">
+            <div className="fixed mt-24 sm:mt-0 flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover w-[375px] h-[500px] sm:w-full sm:h-full bg-banner drop-shadow-xl fade-in">
+              
+              {/* <div className="absolute left-0 items-center justify-center w-full bottom-20">
+                <div className="flex flex-row justify-center space-x-64">
+                  <>
+                    <h1 className="text-7xl font-bold text-white duration-700 cursor-pointer hover:underline font-Nanum underline-offset-[20px]">CONCEPTS</h1>
+                    <h2 className="text-7xl font-bold text-white duration-700 cursor-pointer hover:underline font-Nanum underline-offset-[20px]" >MARKETING</h2>
+                  </>
+                </div>
+              </div> */}
+          </div>
         </div>
       </Fade>
       ) : (

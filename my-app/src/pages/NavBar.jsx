@@ -26,24 +26,24 @@ const NavBar = () => {
     return (
         <>
           <nav  className="fixed w-screen top-0 left-0 bg-transparent h-[150px] z-10 drop-shadow-xl">
-            <div className="flex items-start justify-between w-full h-full">
-              <div className="flex items-center mr-40">
+            <div className="flex items-start justify-between lg:h-full lg:w-full">
+              <div className="flex items-center mt-3 ml-2 mr-10 lg:mr-40">
                 <Link to="/">
                   <img 
                     src={Logo} 
                     alt='Logo' 
-                    className="transform scale-150 lg:w-80 lg:h-40 lg:mb-20">
+                    className="transform scale-[2] lg:scale-150 lg:w-80 lg:h-40 lg:mb-20">
                   </img>
                 </Link>
               </div>
               
-              <div className="absolute top-0 mt-4 mr-8 text-4xl text-white lg:right-20 sm:right-3 md:pt-10 lg:pt-12">
+              <div className="absolute top-0 pt-6 text-4xl text-white right-10 lg:mt-4 lg:mr-8 lg:right-20 sm:right-3 md:pt-10 lg:pt-12">
                 <button className=''>
-                    <ion-icon name="menu" id="menu" onClick={onToggleMenu} ></ion-icon>
+                    <ion-icon name="menu" id="menu" onClick={onToggleMenu}></ion-icon>
                   </button>
               </div>
 
-              <div className={`flex flex-row-reverse items-center sm:gap-10 lg:gap-16 sm:text-sm lg:text-xl nav-links lg:pt-10 lg:pr-52 sm:pr-28 md:pt-10 md:gap-16 sm:mt-5 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
+              <div className={`flex flex-row-reverse items-center gap-7 text-[10px] pt-7 pr-20 sm:gap-10 lg:gap-20 sm:text-sm md:text-lg lg:text-xl nav-links lg:pt-14 lg:pr-52 sm:pr-28 md:pt-10 md:gap-16 sm:mt-5 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
                  
                  
                   <Link to="/contact-us">
