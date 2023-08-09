@@ -37,13 +37,13 @@ const NavBar = () => {
                 </Link>
               </div>
               
-              <div className="absolute top-0 mt-4 mr-8 text-4xl text-white lg:right-20 lg:pt-10">
+              <div className="absolute top-0 mt-4 mr-8 text-4xl text-white lg:right-20 sm:right-3 md:pt-10 lg:pt-12">
                 <button className=''>
                     <ion-icon name="menu" id="menu" onClick={onToggleMenu} ></ion-icon>
                   </button>
               </div>
 
-              <div className={`flex flex-row-reverse items-center gap-16 text-lg nav-links lg:pt-16 lg:pr-52 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
+              <div className={`flex flex-row-reverse items-center sm:gap-10 lg:gap-16 sm:text-sm lg:text-xl nav-links lg:pt-10 lg:pr-52 sm:pr-28 md:pt-10 md:gap-16 sm:mt-5 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
                  
                  
                   <Link to="/contact-us">
