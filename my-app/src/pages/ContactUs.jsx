@@ -10,6 +10,7 @@ const Result = () => {
 const ContactUs = () => {
     const [ data, setData ] = useState({name:"", lastName:"", email:"", phone:"", message:""})
     const [ result, showResult ] = useState(false)
+    const [ validEmail, setValidEmail ] = useState(false)
 
     const handleChange = (e) => {
         const name = e.target.name
@@ -17,9 +18,26 @@ const ContactUs = () => {
         setData({...data, [name]:value})
     }
 
+    const twoCalls = (e) => {
+        onChangeValidEmail();
+        handleChange(e)
+    }
+
+    const onChangeValidEmail = () => {
+        let re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (re.test(data.email)) {setValidEmail(false)}
+        else setValidEmail(true)
+    }
+    const EmailResponse = () => {
+        return (
+            <p>**Please enter a valid email**</p>
+        )
+    }
+
     const sendMail = (e) => { //EmailJS documentation
         e.preventDefault()
 
+        if (!validEmail) {
         emailjs
         .sendForm('service_0bd37pt', 'template_sasqli3', e.target, 'iauEh19za_KMIe1hP')
         .then((result) => {
@@ -32,6 +50,7 @@ const ContactUs = () => {
         setData({message:""})
         showResult(true)
     };
+}
 
     //hide successful submission
 
@@ -41,24 +60,44 @@ const ContactUs = () => {
 
     return (
     <div className="flex flex-col items-center justify-center h-screen text-3xl text-center bg-stone-900 font-Italiana">
-        <h1 className="text-5xl text-white lg:pt-80">Contact <span className="text-white">Us</span></h1>
+        <h1 className="text-5xl text-white lg:pt-72">Contact <span className="text-white">Us</span></h1>
         <p className="text-base text-white lg:pt-10">Please feel free to reach out with any questions here or email us at info@warmhospitalitygroup.com</p>
-        <form className="" method="post" onSubmit={sendMail}>
-            <div className="flex justify-between ">
-                <input className="flex p-5 m-5 text-lg border-2 border-black border-solid" 
-                    type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="First name" required/>
-                <input className="w-full p-5 m-5 text-lg border-2 border-black border-solid" 
-                type="text" name="lastName" id="" onChange={handleChange} value={data.lastName} placeholder="Last name"></input>
+        <div className="flex items-center justify-center w-11/12 h-full">
+            <div className="w-full">
+            <form className="flex flex-col mx-auto text-center lg:pt-10"  method="post" onSubmit={sendMail}>
+                <div className="flex mb-2 space-x-10">
+                    <div className="flex flex-col w-full">
+                        <label className="flex text-sm text-white">First Name (required)</label>
+                        <input className="w-full p-2 text-lg border-2 border-black border-solid lg:mt-2" 
+                            type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="First name" required/>
+                    </div>
+                    <div className="flex flex-col w-full">
+                        <label className="flex text-sm text-white">Last Name</label>
+                        <input className="w-full p-2 text-lg border-2 border-black border-solid lg:mt-2" 
+                            type="text" name="lastName" id="" onChange={handleChange} value={data.lastName} placeholder="Last name"></input>
+                    </div>
+                </div>
+                <label className="flex text-white lg:text-sm lg:pt-2">Email (required)</label>
+                <input className="flex text-lg border-2 border-black border-solid lg:mt-2 lg:px-[12px] lg:py-[8px]" 
+                    type='email' name='email' id="" onChange={twoCalls} value={data.email} placeholder="example@gmail.com" required
+                />
+                <h2 className= "text-base font-semibold text-center text-red-500 underline ">{validEmail ? <EmailResponse/> : null }</h2>
+                <label className="flex text-white lg:text-sm lg:pt-2">Phone Number</label>
+                <input className="flex text-lg border-2 border-black border-solid lg:mt-2 lg:px-[12px] lg:py-[8px]" 
+                    type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"
+                />
+                <label className="flex text-white lg:text-sm lg:pt-2">Message (required)</label>
+                <textarea className="flex text-lg border-2 border-black border-solid lg:mt-2" 
+                    name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..." required
+                />
+                <div className="flex justify-center">
+                    <button className="flex items-center justify-center text-lg text-center text-black bg-white rounded-lg hover:bg-black hover:text-white lg:h-8 lg:w-20 lg:mt-5" type='submit'>Send</button>
+                </div>
+                
+                <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 
+            </form>  
             </div>
-            <input className="flex w-6/12 p-5 m-5 text-lg border-2 border-black border-solid" 
-                type='email' name='email' id="" onChange={handleChange} value={data.email} placeholder="example@gmail.com"/>
-            <input className="flex w-6/12 p-5 m-5 text-lg border-2 border-black border-solid" 
-                type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"/>
-            <textarea className="flex w-6/12 p-5 m-5 text-lg border-2 border-black border-solid" 
-                name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..."/>
-            <button className="flex content-center text-lg text-black bg-cyan-500" type='submit'>Send</button>
-            <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 
-        </form>  
+        </div>
     </div>
     )
 }
