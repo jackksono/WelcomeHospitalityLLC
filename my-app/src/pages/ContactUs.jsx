@@ -59,43 +59,43 @@ const ContactUs = () => {
     }, 10000)
 
     return (
-    <div className="flex flex-col items-center justify-center h-screen text-3xl text-center bg-stone-900 font-Italiana">
-        <h1 className="pt-64 text-5xl text-white lg:pt-72">Contact <span className="text-white">Us</span></h1>
-        <p className="pt-4 text-xs text-white sm:text-base lg:pt-10">Please feel free to reach out with any questions here or email us at info@warmhospitalitygroup.com</p>
-        <div className="flex items-center justify-center m-4 sm:w-11/12 sm:h-full ">
+    <div className="flex flex-col items-center justify-center text-3xl text-center max-h-min bg-stone-900 font-Italiana">
+        <h1 className="pt-32 text-5xl text-white lg:pt-72">Contact <span className="text-white">Us</span></h1>
+        <p className="pt-4 text-xs text-white sm:text-base lg:pt-10 lg:text-lg">Please feel free to reach out with any questions here or email us at info@warmhospitalitygroup.com</p>
+        <div className="flex items-center justify-center m-4 lg:my-0 sm:w-11/12 sm:h-full ">
             <div className="w-full">
-            <form className="flex flex-col mx-auto text-center lg:pt-10"  method="post" onSubmit={sendMail}>
-                <div className="flex mb-2 space-x-5 sm:space-x-10">
-                    <div className="flex flex-col w-full">
-                        <label className="flex text-xs text-white sm:text-base">First Name (required)</label>
-                        <input className="w-full p-2 text-xs border-2 border-black border-solid h-7 lg:text-lg lg:mt-2" 
-                            type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="First name" required/>
+                <form className="flex flex-col mx-auto text-center lg:pt-10"  method="post" onSubmit={sendMail}>
+                    <div className="flex mb-2 space-x-5 sm:space-x-10">
+                        <div className="flex flex-col w-full">
+                            <label className="flex text-xs text-white sm:text-base lg:text-lg">First Name (required)</label>
+                            <input className="w-full p-2 text-xs border-2 border-black border-solid h-7 lg:h-auto sm:text-base lg:text-lg lg:mt-2" 
+                                type='text' name='name' id="" onChange={handleChange} value={data.name} placeholder="First name" required/>
+                        </div>
+                        <div className="flex flex-col w-full">
+                            <label className="flex text-xs text-white sm:text-base lg:text-lg">Last Name</label>
+                            <input className="w-full p-2 px-2 text-xs border-2 border-black border-solid sm:text-base h-7 lg:h-auto lg:text-lg lg:mt-2" 
+                                type="text" name="lastName" id="" onChange={handleChange} value={data.lastName} placeholder="Last name"></input>
+                        </div>
                     </div>
-                    <div className="flex flex-col w-full">
-                        <label className="flex text-xs text-white sm:text-base">Last Name</label>
-                        <input className="w-full p-2 px-2 text-xs border-2 border-black border-solid h-7 lg:text-lg lg:mt-2" 
-                            type="text" name="lastName" id="" onChange={handleChange} value={data.lastName} placeholder="Last name"></input>
+                    <label className="flex text-xs text-white sm:text-base lg:text-lg lg:pt-2">Email (required)</label>
+                    <input className="flex text-xs border-2 h-7 border-black border-solid lg:mt-2 sm:text-base lg:px-[12px] lg:text-lg lg:h-auto lg:py-[8px] px-2" 
+                        type='email' name='email' id="" onChange={twoCalls} value={data.email} placeholder="example@gmail.com" required
+                    />
+                    <h2 className= "text-base font-semibold text-center text-red-500 underline ">{validEmail ? <EmailResponse/> : null }</h2>
+                    <label className="flex text-xs text-white sm:text-base lg:text-lg lg:pt-2 ">Phone Number</label>
+                    <input className="flex text-xs border-2 h-7 border-black border-solid lg:mt-2 sm:text-base lg:px-[12px] lg:h-auto lg:text-lg lg:py-[8px] px-2" 
+                        type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"
+                    />
+                    <label className="flex text-xs text-white lg:text-lg sm:text-base lg:pt-2">Message (required)</label>
+                    <textarea className="flex mb-5 text-xs border-2 border-black border-solid sm:text-base lg:mb-14 lg:text-lg lg:mt-2" 
+                        name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..." required
+                    />
+                    <div className="flex justify-center mb-0 lg:h-auto">
+                        <button className="flex items-center justify-center w-48 text-base text-center text-black bg-white rounded-lg sm:text-lg hover:bg-black hover:text-white lg:w-20 lg:mt-5" type='submit'>Send</button>
                     </div>
-                </div>
-                <label className="flex text-xs text-white lg:text-sm lg:pt-2">Email (required)</label>
-                <input className="flex text-xs border-2 h-7 border-black border-solid lg:mt-2 lg:px-[12px] lg:py-[8px] px-2" 
-                    type='email' name='email' id="" onChange={twoCalls} value={data.email} placeholder="example@gmail.com" required
-                />
-                <h2 className= "text-base font-semibold text-center text-red-500 underline ">{validEmail ? <EmailResponse/> : null }</h2>
-                <label className="flex text-xs text-white lg:text-sm lg:pt-2 ">Phone Number</label>
-                <input className="flex text-xs border-2 h-7 border-black border-solid lg:mt-2 lg:px-[12px] lg:py-[8px] px-2" 
-                    type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"
-                />
-                <label className="flex text-xs text-white lg:text-sm lg:pt-2">Message (required)</label>
-                <textarea className="flex mb-5 text-xs border-2 border-black border-solid lg:mb-14 lg:text-lg lg:mt-2" 
-                    name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..." required
-                />
-                <div className="flex justify-center">
-                    <button className="flex items-center justify-center mb-40 text-base text-center text-black bg-white rounded-lg sm:text-lg hover:bg-black hover:text-white lg:h-8 lg:w-20 lg:mt-5" type='submit'>Send</button>
-                </div>
-                
-                <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 
-            </form>  
+                    
+                    <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 
+                </form>  
             </div>
         </div>
     </div>
