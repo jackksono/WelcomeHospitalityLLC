@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import Headroom from 'react-headroom';
+
 import Home from "./Home";
 import ContactUs from "./ContactUs";
 import Services from "./Services";
@@ -7,10 +9,11 @@ import AboutUs from "./AboutUs"
 import Logo from '../Images/Logos/Logo.png'
 
 
+
+
 const NavBar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
 
   const onToggleMenu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
@@ -25,7 +28,9 @@ const NavBar = () => {
 
     return (
         <>
+        
           <nav  className="fixed w-screen top-0 left-0 bg-transparent h-[150px] z-10 drop-shadow-xl">
+          <Headroom>
             <div className="flex items-start justify-between lg:h-full lg:w-full">
               <div className="flex items-center mt-3 ml-2 sm:mr-20 sm:mt-0 lg:mr-40">
                 <Link to="/">
@@ -61,7 +66,9 @@ const NavBar = () => {
               
               </div>
             </div>
+            </Headroom>
           </nav>
+         
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs/>} />
