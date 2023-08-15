@@ -87,11 +87,11 @@ const ContactUs = () => {
                         type='phone' name='phone' id="" onChange={handleChange} value={data.phone} placeholder="+1 (xxx)-xxx-xxxx"
                     />
                     <label className="flex text-xs text-white lg:text-lg sm:text-base lg:pt-2">Message (required)</label>
-                    <textarea className="flex mb-5 text-xs border-2 border-black border-solid sm:text-base lg:mb-14 lg:text-lg lg:mt-2" 
+                    <textarea className="flex mb-5 text-xs border-2 border-black border-solid sm:text-base lg:mb-8 lg:text-lg lg:mt-2" 
                         name='message' id='' cols='30' rows='10' onChange={handleChange} value={data.message} placeholder="Enter message here..." required
                     />
                     <div className="flex justify-center mb-0 lg:h-auto">
-                        <button className="flex items-center justify-center w-48 text-base text-center text-black bg-white rounded-lg sm:text-lg hover:bg-black hover:text-white lg:w-20 lg:mt-5" type='submit'>Send</button>
+                        <button className="flex items-center justify-center w-48 text-base text-center text-black bg-white rounded-lg sm:text-lg hover:bg-black hover:text-white lg:w-20 lg:mb-4" type='submit'>Send</button>
                     </div>
                     
                     <h2 className= "pt-5 text-lg">{result ? <Result/> : null}</h2> 

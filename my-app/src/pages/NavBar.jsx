@@ -43,8 +43,8 @@ const NavBar = () => {
               </div>
               
               <div className="absolute top-0 z-10 text-3xl text-white lg:text-5xl sm:text-4xl pt-9 right-7 lg:mt-4 lg:mr-8 lg:right-20 sm:right-10 md:pt-10 lg:pt-12">
-                <button className=''>
-                    <ion-icon name="menu" id="menu" onClick={onToggleMenu}></ion-icon>
+                <button className='hover:text-black'>
+                    <ion-icon  name="menu" id="menu" onClick={onToggleMenu}></ion-icon>
                   </button>
               </div>
 
@@ -52,15 +52,13 @@ const NavBar = () => {
                  
                  
                   <Link to="/contact-us">
-                    <button className="text-white font-Italiana">Contact</button>
+                    <button className="text-white font-Italiana hover:text-black focus:text-gray-300">Contact</button>
                   </Link>
                   <Link to="/services">
-                    <button className="text-white font-Italiana">Services</button>
+                    <button className="text-white font-Italiana hover:text-black focus:text-gray-300">Services</button>
                   </Link>
                   <Link to="/about-us">
-                    <button className="z-10 text-white font-Italiana">
-                      About Us
-                    </button>
+                    <button className="z-10 text-white font-Italiana hover:text-black focus:text-gray-300">About Us</button>
                   </Link>
                   
               
