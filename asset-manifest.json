@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/WelcomeHospitalityLLC/static/css/main.5aba474e.css",
+    "main.js": "/WelcomeHospitalityLLC/static/js/main.b2e2589a.js",
+    "static/media/Banner.png": "/WelcomeHospitalityLLC/static/media/Banner.65e1de8d9e9538f7780f.png",
+    "static/media/TeamImage.jpg": "/WelcomeHospitalityLLC/static/media/TeamImage.33faab6d6018d3df3f78.jpg",
+    "static/media/Logo.png": "/WelcomeHospitalityLLC/static/media/Logo.5723cf125d2af0795a1b.png",
+    "index.html": "/WelcomeHospitalityLLC/index.html",
+    "main.5aba474e.css.map": "/WelcomeHospitalityLLC/static/css/main.5aba474e.css.map",
+    "main.b2e2589a.js.map": "/WelcomeHospitalityLLC/static/js/main.b2e2589a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aba474e.css",
+    "static/js/main.b2e2589a.js"
+  ]
+}
