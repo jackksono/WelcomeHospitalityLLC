@@ -40,7 +40,7 @@ const AboutUs = () => {
                     </div>
                     <div className="flex flex-col pt-5 text-center sm:absolute lg:right-10 lg:pl-16 lg:pb-0 lg:w-1/4 sm:w-1/3 lg:mt-40 xl:mt-[-280px] sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Doris Calderon</h1>
-                        <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Managing Partner</label>
+                        <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Mannaging Partner</label>
                         <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base mx-3 xl:mx-0 leading-5 mb-[-5px] xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae rerum 
                         quam pariatur, impedit possimus dignissimos rem quidem autem libero incidunt dolor! Soluta, ipsam saepe pariatur dolorum 
                         quos culpa assumenda ab rerum incidunt? Accusamus consequuntur dolor nulla sunt sequi? Voluptatem?</p>
