@@ -22,26 +22,23 @@ const AboutUs = () => {
                 <div className="flex flex-col items-center justify-center pt-10 text-center text-white sm:pt-10 sm:text-4xl lg:text-8xl ">
                     <h1 className="lg:z-10 ">MEET THE TEAM</h1>
 
-                    <img src={TeamPicture} alt="TeamPicture" className="w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
+                    <img src={TeamPicture} alt="TeamPicture" className="object-cover w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
 
-                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-1/4 lg:pr-16 lg:mt-40 xl:pt-60 lg:left-10 xl:mt-[-300px] sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
+                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-2/6 lg:pr-24 lg:mt-40 xl:pt-60 lg:left-10 xl:mt-[-300px] sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Michelle Tran</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Managing Partner</label>
-                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base mx-3 leading-5 mb-[-5px] xl:text-xl">
-                            With over 10 years of experience in food and beverage with a heavy emphasis 
-                            on hospitality, Michelle has a clear passion for the craft of menu creation 
-                            with the utmost regard for guest experience. Specializing in business 
-                            operations and strategic marketing, Michelle founded Warm Hospitality to
-                             assist businesses in profit maximization, hospitality training material 
-                             creation, refining business operations, and culinary development. Through 
-                             years of building a network with other field experts, Michelle aims to assist 
-                             her clients in overcoming challenges and capitalizing on creative 
-                             possibilities. </p>
+                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full leading-5 mb-[-5px] xl:text-xl">
+                        Michelle boasts over a decade of profound expertise in the realm of food and beverage, underpinned by a steadfast
+                         commitment to the principles of hospitality. Her dedication to the art of menu creation is equaled only by her 
+                         unwavering prioritization of elevating the guest experience. Michelle's specialization lies in the intricate domains 
+                         of business operations and strategic marketing, culminating in the establishment of Warm Hospitality—an entity dedicated 
+                         to empowering businesses in their pursuit of profit maximization, the creation of comprehensive hospitality training 
+                         materials, the refinement of operational processes, and the nurturing of culinary excellence. Having diligently cultivated an extensive network of industry peers and experts over the years, Michelle is uniquely positioned to assist her clients in surmounting operational challenges and strategically capitalizing on a spectrum of creative possibilities, all while adhering to the highest standards of professionalism and excellence. </p>
                     </div>
-                    <div className="flex flex-col pt-5 text-center sm:absolute lg:right-10 lg:pl-16 lg:pb-0 lg:w-1/4 sm:w-1/3 lg:mt-40 xl:mt-[-280px] sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
+                    <div className="flex flex-col pt-5 text-center sm:absolute lg:right-5 lg:pl-24 lg:pb-0 lg:w-2-6 sm:w-1/3 lg:mt-40 xl:mt-[-280px] sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Doris Calderon</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Mannaging Partner</label>
-                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base mx-3 xl:mx-0 leading-5 mb-[-5px] xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae rerum 
+                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full xl:mx-0 leading-5 mb-[-5px] xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae rerum 
                         quam pariatur, impedit possimus dignissimos rem quidem autem libero incidunt dolor! Soluta, ipsam saepe pariatur dolorum 
                         quos culpa assumenda ab rerum incidunt? Accusamus consequuntur dolor nulla sunt sequi? Voluptatem?</p>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Headroom from 'react-headroom';
 
@@ -7,13 +7,18 @@ import ContactUs from "./ContactUs";
 import Services from "./Services";
 import AboutUs from "./AboutUs"
 import Logo from '../Images/Logos/Logo.png'
+import Loading from '../pages/Loading'
 
-
+const ConciergeService = lazy(() => import('../pages/ServicesFolder/ConciergeService'))
+const EventPlanning = lazy(() => import('../pages/ServicesFolder/EventPlanning'))
+const HospitalityConsulting = lazy(() => import('../pages/ServicesFolder/HospitalityConsulting'))
 
 
 const NavBar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDropDownOpen, setIsDropDownOpen ] = useState(false)
+  const closeTimerRef = useRef(null)
 
   const onToggleMenu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
@@ -26,6 +31,39 @@ const NavBar = () => {
     navLinks.classList.toggle('hidden')
   }
 
+
+  const handleMouseEnterButton = () => {
+    setIsDropDownOpen(true);
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+    }
+  };
+
+  const handleMouseLeaveButton = () => {
+    closeTimerRef.current = setTimeout(() => {
+      setIsDropDownOpen(false);
+    }, 200);
+  };
+
+  const handleMouseEnterDropdown = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+    }
+  };
+
+  const handleMouseLeaveDropdown = () => {
+    closeTimerRef.current = setTimeout(() => {
+      setIsDropDownOpen(false);
+    }, 200);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (closeTimerRef.current) {
+        clearTimeout(closeTimerRef.current);
+      }
+    };
+  }, []);
     return (
         <>
         
@@ -49,30 +87,58 @@ const NavBar = () => {
               </div>
 
               <div className={`flex flex-row-reverse z-0 items-center gap-7 text-[10px] pt-10 pr-20 sm:gap-10 lg:gap-20 sm:text-sm md:text-lg lg:text-2xl nav-links lg:pt-14 lg:pr-52 sm:pr-28 md:pt-10 md:gap-16 sm:mt-0 transition duration-500 ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
-                 
-                 
                   <Link to="/contact-us">
                     <button className="text-white font-Italiana hover:text-black focus:text-gray-300">Contact</button>
                   </Link>
-                  <Link to="/services">
-                    <button className="text-white font-Italiana hover:text-black focus:text-gray-300">Services</button>
-                  </Link>
+
+                  <div className="relative group">
+                    <Link to='/services'>
+                      <button
+                        className="text-white font-Italiana hover:text-black focus:text-gray-300"
+                        onMouseEnter={handleMouseEnterButton}
+                        onMouseLeave={handleMouseLeaveButton}
+                      >
+                        Services
+                      </button>
+                    </Link>
+                    {isDropDownOpen && (
+                      <div
+                        className="absolute left-0 z-10 duration-1000 bg-white border border-black sm:h-28 w-60 top-10"
+                        onMouseEnter={handleMouseEnterDropdown}
+                        onMouseLeave={handleMouseLeaveDropdown}
+                      >
+                        <Link to='/concierge-services'>
+                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Concierge Service</button>
+                        </Link>
+                        <Link to='/event-planning'>
+                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Event Planning</button>
+                        </Link>
+                        <Link to='/hospitality-consulting'>
+                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Hospitality Consulting</button>
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                   <Link to="/about-us">
                     <button className="z-10 text-white font-Italiana hover:text-black focus:text-gray-300">About Us</button>
                   </Link>
-                  
-              
               </div>
             </div>
             </Headroom>
           </nav>
          
+          <Suspense fallback={<Loading/>}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/concierge-services" element={<ConciergeService/>}/>
+        <Route path="/event-planning" element={<EventPlanning/>}/>
+        <Route path="/hospitality-consulting" element={<HospitalityConsulting/>}/>
+
       </Routes>
+      </Suspense>
     </>
     )
 }
