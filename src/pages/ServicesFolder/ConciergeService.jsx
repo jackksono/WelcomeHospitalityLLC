@@ -1,8 +1,13 @@
 import React from 'react'
-
+import ConciergeServiceIMG from '../../Images/WebImages/ConciergeService.jpg'
 const ConciergeService = () => {
   return (
-    <div>ConciergeService</div>
+    <div className='w-screen h-screen overflow-auto max-h-min pt-28 bg-stone-900'>
+
+    <div className='relative z-0 flex items-center justify-center w-screen h-full'>
+      <img className='object-cover w-screen h-3/4' src={ConciergeServiceIMG} alt='ConciergeServiceIMG'></img>
+    </div>
+  </div>
   )
 }
 
