@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[374],{394:function(n,t,u){u.r(t);u(791);var e=u(184);t.default=function(){return(0,e.jsx)("div",{children:"HospitalityConsulting"})}}}]);
-//# sourceMappingURL=374.7b491947.chunk.js.map

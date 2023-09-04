@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[780],{780:function(e,n,c){c.r(n);c(791);var r=c(184);n.default=function(){return(0,r.jsx)("div",{children:"ConciergeService"})}}}]);
-//# sourceMappingURL=780.e22070f1.chunk.js.map
