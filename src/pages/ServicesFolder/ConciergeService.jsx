@@ -9,8 +9,8 @@ const ConciergeService = () => {
       <h1 className='absolute text-6xl text-white sm:pt-80 font-Italiana sm:left-60'>Concierge Services</h1>
     </div>
 
-    <div className='flex flex-col items-center justify-center h-auto pb-20 my-20 text-white lg:px-24 font-Italiana'>
-      <div className='w-1/2 space-y-4 text-left'>
+    <div className='flex flex-col items-center justify-center h-auto pb-20 my-20 text-white lg:px-12 font-Italiana'>
+      <div className='w-3/4 space-y-4 text-left'>
         <div className='flex items-center justify-center text-4xl'>
           <h1>Premier Concierge Services in Las Vegas</h1>
         </div>

@@ -31,7 +31,7 @@ const AboutUs = () => {
 ;
             <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] xl:mt-[40px] lg:h-auto bg-stone-900 font-Italiana">
                 <div className="flex flex-col items-center justify-center pt-10 text-center text-white sm:pt-10 sm:text-4xl lg:text-8xl ">
-                    <h1 className="lg:z-10 ">MEET THE TEAM</h1>
+                    <h1 className="">MEET THE TEAM</h1>
 
                     <img src={TeamPicture} alt="TeamPicture" className="object-cover w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
 
