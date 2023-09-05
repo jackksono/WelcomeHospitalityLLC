@@ -68,7 +68,7 @@ const NavBar = () => {
     return (
         <>
         
-          <nav  className={`fixed w-screen top-0 left-0 h-[200px] z-10 bg-transparent`}>
+          <nav  className={`fixed w-screen top-0 left-0 h-[210px] z-10 bg-transparent`}>
           <Headroom>
             <div className={`h-[150px] ${onHomePage ? 'bg-transparent' : 'bg-stone-900'}`}>
             <div className={`flex items-start justify-between bg-transparent lg:h-full lg:w-full `}>

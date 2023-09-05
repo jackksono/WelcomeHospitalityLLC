@@ -30,12 +30,12 @@ const AboutUs = () => {
             </div>
 ;
             <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] xl:mt-[40px] lg:h-auto bg-stone-900 font-Italiana">
-                <div className="flex flex-col items-center justify-center pt-10 text-center text-white sm:pt-10 sm:text-4xl lg:text-8xl ">
+                <div className="flex flex-col items-center justify-center pt-5 text-center text-white sm:text-4xl lg:text-8xl ">
                     <h1 className="">MEET THE TEAM</h1>
 
                     <img src={TeamPicture} alt="TeamPicture" className="object-cover w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
 
-                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-2/6 lg:pr-24 lg:mt-40 xl:pt-60 lg:left-10 xl:mt-[-300px] sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
+                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-2/6 lg:pr-24 lg:mt-20 lg:left-10 sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Michelle Tran</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Managing Partner</label>
                         <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full leading-5 mb-[-5px] xl:text-xl">
@@ -46,12 +46,20 @@ const AboutUs = () => {
                          to empowering businesses in their pursuit of profit maximization, the creation of comprehensive hospitality training 
                          materials, the refinement of operational processes, and the nurturing of culinary excellence. Having diligently cultivated an extensive network of industry peers and experts over the years, Michelle is uniquely positioned to assist her clients in surmounting operational challenges and strategically capitalizing on a spectrum of creative possibilities, all while adhering to the highest standards of professionalism and excellence. </p>
                     </div>
-                    <div className="flex flex-col pt-5 text-center sm:absolute lg:right-5 lg:pl-24 lg:pb-0 lg:w-2-6 sm:w-1/3 lg:mt-40 xl:mt-[-280px] sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
+                    <div className="flex flex-col pt-5 text-center sm:absolute lg:right-5 lg:pl-24 lg:pb-0 lg:w-2-6 sm:w-1/3 lg:mt-40 sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Doris Calderon</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Mannaging Partner</label>
-                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full xl:mx-0 leading-5 mb-[-5px] xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae rerum 
-                        quam pariatur, impedit possimus dignissimos rem quidem autem libero incidunt dolor! Soluta, ipsam saepe pariatur dolorum 
-                        quos culpa assumenda ab rerum incidunt? Accusamus consequuntur dolor nulla sunt sequi? Voluptatem?</p>
+                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full xl:mx-0 leading-5 mb-[-5px] xl:text-xl">
+                            Doris commenced her remarkable journey in the hospitality sector at the esteemed Wynn Las Vegas in 2016, where she was exposed to the pinnacle
+                             of service excellence. This transformative experience ignited her profound passion for the dynamic realm of hospitality. Doris proceeded to 
+                             dedicate several years to honing her expertise in Food and Beverage administration at Wynn, and in 2019, she embarked on an impactful role as 
+                             part of the opening team for Resorts World Las Vegas. During this transformative period, Doris diligently pursued her
+                              academic aspirations, culminating in the attainment of her bachelor's degree in Project and Business Management. Her
+                               commitment to excellence was further showcased in her role as General Manager at the renowned Cafe Lola, where she 
+                               played a pivotal role in its operations. Doris's trajectory in the industry continues to evolve, marked by her 
+                               unwavering dedication to the art of hospitality and her impressive record of contributions to operational 
+                               excellence over the years.
+                        </p>
                     </div>
                 </div>
             </div>
