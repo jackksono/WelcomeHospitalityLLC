@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/WelcomeHospitalityLLC/static/css/main.bf364dd1.css",
-    "main.js": "/WelcomeHospitalityLLC/static/js/main.e30aad7e.js",
-    "static/js/331.ce8cc60c.chunk.js": "/WelcomeHospitalityLLC/static/js/331.ce8cc60c.chunk.js",
-    "static/js/744.8852b160.chunk.js": "/WelcomeHospitalityLLC/static/js/744.8852b160.chunk.js",
-    "static/js/74.b10c72eb.chunk.js": "/WelcomeHospitalityLLC/static/js/74.b10c72eb.chunk.js",
+    "main.css": "/WelcomeHospitalityLLC/static/css/main.b5deaa27.css",
+    "main.js": "/WelcomeHospitalityLLC/static/js/main.f342502f.js",
+    "static/js/331.87dfaa47.chunk.js": "/WelcomeHospitalityLLC/static/js/331.87dfaa47.chunk.js",
+    "static/js/744.6c7603ed.chunk.js": "/WelcomeHospitalityLLC/static/js/744.6c7603ed.chunk.js",
+    "static/js/74.0d778590.chunk.js": "/WelcomeHospitalityLLC/static/js/74.0d778590.chunk.js",
     "static/media/EventPlanning.jpg": "/WelcomeHospitalityLLC/static/media/EventPlanning.55fdcc56305c3ba095ba.jpg",
     "static/media/ServiceImage.jpg": "/WelcomeHospitalityLLC/static/media/ServiceImage.eb4e5691c7cf989172c1.jpg",
     "static/media/Banner.png": "/WelcomeHospitalityLLC/static/media/Banner.65e1de8d9e9538f7780f.png",
@@ -14,14 +14,14 @@
     "static/media/ConciergeService.jpg": "/WelcomeHospitalityLLC/static/media/ConciergeService.3fe15bf2ebacbdfd0018.jpg",
     "static/media/Logo.png": "/WelcomeHospitalityLLC/static/media/Logo.5723cf125d2af0795a1b.png",
     "index.html": "/WelcomeHospitalityLLC/index.html",
-    "main.bf364dd1.css.map": "/WelcomeHospitalityLLC/static/css/main.bf364dd1.css.map",
-    "main.e30aad7e.js.map": "/WelcomeHospitalityLLC/static/js/main.e30aad7e.js.map",
-    "331.ce8cc60c.chunk.js.map": "/WelcomeHospitalityLLC/static/js/331.ce8cc60c.chunk.js.map",
-    "744.8852b160.chunk.js.map": "/WelcomeHospitalityLLC/static/js/744.8852b160.chunk.js.map",
-    "74.b10c72eb.chunk.js.map": "/WelcomeHospitalityLLC/static/js/74.b10c72eb.chunk.js.map"
+    "main.b5deaa27.css.map": "/WelcomeHospitalityLLC/static/css/main.b5deaa27.css.map",
+    "main.f342502f.js.map": "/WelcomeHospitalityLLC/static/js/main.f342502f.js.map",
+    "331.87dfaa47.chunk.js.map": "/WelcomeHospitalityLLC/static/js/331.87dfaa47.chunk.js.map",
+    "744.6c7603ed.chunk.js.map": "/WelcomeHospitalityLLC/static/js/744.6c7603ed.chunk.js.map",
+    "74.0d778590.chunk.js.map": "/WelcomeHospitalityLLC/static/js/74.0d778590.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf364dd1.css",
-    "static/js/main.e30aad7e.js"
+    "static/css/main.b5deaa27.css",
+    "static/js/main.f342502f.js"
   ]
 }
