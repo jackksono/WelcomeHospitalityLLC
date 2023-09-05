@@ -1,24 +1,35 @@
 import React from "react"
 
 import TeamPicture from '../Images/TeamPictures/TeamImage.jpg'
-
+import AboutUsIMG from '../Images/WebImages/AboutUsImage.jpg'
 const AboutUs = () => {
 
     return (
         <>
         <div className="w-screen overflow-auto bg-stone-900">
-            <div className="flex items-center justify-center overflow-auto text-3xl text-center lg:-z-0 pt-28 lg:h-3/4 sm:pt-56 lg:mt-40 bg-stone-900 font-Italiana">
+            <div className='w-screen h-screen overflow-auto pt-28 bg-stone-900'>
+                <div className='relative z-0 flex items-center justify-center w-screen h-full'>
+                    <img className='object-cover w-screen h-3/4' src={AboutUsIMG} alt='serviceImage'></img>
+                    <h1 className='absolute text-6xl text-white sm:pt-80 font-Italiana sm:left-60'>About Us</h1>
+                </div>
+            </div>
+            <div className="flex items-center justify-center overflow-auto text-3xl text-center lg:-z-0 pt-28 lg:h-3/4 bg-stone-900 font-Italiana">
                 <div className="flex flex-col">
                     <h1 className="text-white lg:text-8xl sm:text-4xl lg:mt-0">WHO WE ARE</h1>
-                    <p className="pt-4 mx-5 text-white lg:text-lg xl:leading-8 xl:text-xl md:text-[20px] sm:text-[15px] text-xs sm:mx-5 leading-5 lg:pt-7 lg:m-10 sm:leading-[2rem] xl:mx-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corporis doloremque corrupti dolorem temporibus 
-                
-                        aliquid hic repellat atque eius dolores suscipit, quam vel porro sequi aperiam dolor omnis optio facilis, nemo laudantium
-                        voluptatibus, explicabo commodi? Error iusto quasi illo quia?
+                    <p className="pt-4 mx-5 text-white lg:text-lg xl:leading-8 xl:text-xl md:text-[20px] sm:text-[15px] text-xs sm:mx-5 leading-5 lg:pt-7 lg:m-10 sm:leading-[2rem] xl:mx-40">
+                        Welcome to Warm Hospitality, where passion, expertise, and creativity converge to redefine the world of hospitality. 
+                        With a shared love for the art of hospitality and a wealth of experience in food and beverage, we bring a unique blend of 
+                        culinary mastery and event planning finesse to the forefront. Our journey through the culinary world has instilled in us 
+                        an unwavering commitment to excellence, a deep appreciation for flavors, and an understanding of the power of impeccable 
+                        service. Now, as we embark on this exciting venture, we are poised to revolutionize the industry. Our dedication to 
+                        crafting unforgettable experiences shines through in every aspect of our work, from concierge services that anticipate 
+                        your every need to event planning that turns dreams into reality. Join us on a journey where hospitality knows no bounds, 
+                        guided by expertise and passion
                     </p>
                 </div>
             </div>
 ;
-            <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] xl:mt-[20px] sm:pt-20 lg:h-auto bg-stone-900 font-Italiana">
+            <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] xl:mt-[40px] lg:h-auto bg-stone-900 font-Italiana">
                 <div className="flex flex-col items-center justify-center pt-10 text-center text-white sm:pt-10 sm:text-4xl lg:text-8xl ">
                     <h1 className="lg:z-10 ">MEET THE TEAM</h1>
 

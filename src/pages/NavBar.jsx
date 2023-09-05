@@ -102,24 +102,39 @@ const NavBar = () => {
                       </button>
                     </Link>
                     {isDropDownOpen && (
-                      <div
-                        className="absolute left-0 z-10 duration-1000 bg-white border border-black sm:h-28 w-60 top-10"
-                        onMouseEnter={handleMouseEnterDropdown}
-                        onMouseLeave={handleMouseLeaveDropdown}
-                      >
-                        <Link to='/concierge-services'>
-                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Concierge Service</button>
-                        </Link>
-                        <Link to='/event-planning'>
-                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Event Planning</button>
-                        </Link>
-                        <Link to='/hospitality-consulting'>
-                          <button className="w-full px-2 py-1 mb-1 text-sm text-left text-black font-Italiana hover:bg-gray-200">Hospitality Consulting</button>
+                    <div
+                      className="absolute z-10 flex justify-center text-center duration-1000 border border-black -left-24 bg-stone-900 space-x-7 sm:h-16 top-10"
+                      onMouseEnter={handleMouseEnterDropdown}
+                      onMouseLeave={handleMouseLeaveDropdown}
+                    >
+                      <div className="flex-1">
+                        <Link to='/concierge-services'> 
+                          <button className="w-full p-2 text-sm text-left text-white font-Italiana hover:text-stone-900 hover:bg-white">
+                            Concierge Service
+                          </button>
                         </Link>
                       </div>
-                    )}
+
+                      <div className="flex-1">
+                        <Link to='/event-planning'>
+                          <button className="w-full p-2 text-sm text-left text-white font-Italiana hover:text-stone-900 hover:bg-white">
+                            Event Planning
+                          </button>
+                        </Link>
+                      </div>
+
+                      <div className="flex-1">
+                        <Link to='/hospitality-consulting'>
+                          <button className="w-full p-2 text-sm text-left text-white font-Italiana hover:text-stone-900 hover:bg-white">
+                            Hospitality Consulting
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+
                   </div>
-                  <Link to="/about-us">
+                  <Link to="/about-us" className="relative group">
                     <button className="z-10 text-white font-Italiana hover:text-black focus:text-gray-300">About Us</button>
                   </Link>
               </div>
