@@ -13,7 +13,7 @@ const AboutUs = () => {
                     <h1 className='absolute text-6xl text-white sm:pt-80 font-Italiana sm:left-60'>About Us</h1>
                 </div>
             </div>
-            <div className="flex items-center justify-center overflow-auto text-3xl text-center lg:-z-0 pt-28 lg:h-3/4 bg-stone-900 font-Italiana">
+            <div className="flex items-center justify-center pt-12 overflow-auto text-3xl text-center lg:-z-0 lg:h-3/4 bg-stone-900 font-Italiana">
                 <div className="flex flex-col">
                     <h1 className="text-white lg:text-8xl sm:text-4xl lg:mt-0">WHO WE ARE</h1>
                     <p className="pt-4 mx-5 text-white lg:text-lg xl:leading-8 xl:text-xl md:text-[20px] sm:text-[15px] text-xs sm:mx-5 leading-5 lg:pt-7 lg:m-10 sm:leading-[2rem] xl:mx-40">
@@ -29,16 +29,16 @@ const AboutUs = () => {
                 </div>
             </div>
 ;
-            <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] xl:mt-[40px] lg:h-auto bg-stone-900 font-Italiana">
+            <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] lg:h-auto bg-stone-900 font-Italiana">
                 <div className="flex flex-col items-center justify-center pt-5 text-center text-white sm:text-4xl lg:text-8xl ">
                     <h1 className="">MEET THE TEAM</h1>
 
                     <img src={TeamPicture} alt="TeamPicture" className="object-cover w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
 
-                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-2/6 lg:pr-24 lg:mt-20 lg:left-10 sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
+                    <div className="flex flex-col pt-5 text-center sm:absolute lg:pb-0 lg:w-2/6 lg:pr-24 lg:mt-40 lg:left-10 sm:w-1/3 md:pt-20 sm:left-5 xl:left-20 sm:pt-28">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Michelle Tran</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Managing Partner</label>
-                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full leading-5 mb-[-5px] xl:text-xl">
+                        <p className="text-[10px] lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full leading-5 mb-[-5px] ">
                         Michelle boasts over a decade of profound expertise in the realm of food and beverage, underpinned by a steadfast
                          commitment to the principles of hospitality. Her dedication to the art of menu creation is equaled only by her 
                          unwavering prioritization of elevating the guest experience. Michelle's specialization lies in the intricate domains 
@@ -49,7 +49,7 @@ const AboutUs = () => {
                     <div className="flex flex-col pt-5 text-center sm:absolute lg:right-5 lg:pl-24 lg:pb-0 lg:w-2-6 sm:w-1/3 lg:mt-40 sm:right-5 xl:pt-0 sm:pt-28 md:pt-20 xl:right-20">
                         <h1 className="lg:text-4xl sm:text-3xl mb-[-13px] sm:mb-0 xl:text-5xl">Doris Calderon</h1>
                         <label className=" text-gray-300 lg:text-lg sm:text-xs text-[10px] mb-[-5px]">Mannaging Partner</label>
-                        <p className="text-[10px] lg:text-lg lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full xl:mx-0 leading-5 mb-[-5px] xl:text-xl">
+                        <p className="text-[10px] lg:w-auto sm:text-sm sm:pt-3 lg:pt-10 md:text-base w-full leading-5 mb-[-5px] ">
                             Doris commenced her remarkable journey in the hospitality sector at the esteemed Wynn Las Vegas in 2016, where she was exposed to the pinnacle
                              of service excellence. This transformative experience ignited her profound passion for the dynamic realm of hospitality. Doris proceeded to 
                              dedicate several years to honing her expertise in Food and Beverage administration at Wynn, and in 2019, she embarked on an impactful role as 

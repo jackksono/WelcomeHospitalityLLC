@@ -11,7 +11,7 @@ const EventPlanning = () => {
 
       <div className='flex flex-col items-center justify-center h-auto pb-20 my-20 text-white lg:px-12 font-Italiana'>
       <div className='w-3/4 space-y-4 text-left'>
-        <div className='flex items-center justify-center text-4xl'>
+        <div className='flex items-center justify-center text-8xl'>
           <h1>Event Planning Services in Las Vegas</h1>
         </div>
         <p>At Warm Hospitality, we are not just a destination for exceptional drinks and vibrant ambiance; we are your partners in crafting unforgettable events and celebrations. Our dedicated event planning services are designed to elevate your gatherings, ensuring they are stylish, memorable, and hassle-free.</p>

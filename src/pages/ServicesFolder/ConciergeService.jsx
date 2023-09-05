@@ -11,7 +11,7 @@ const ConciergeService = () => {
 
     <div className='flex flex-col items-center justify-center h-auto pb-20 my-20 text-white lg:px-12 font-Italiana'>
       <div className='w-3/4 space-y-4 text-left'>
-        <div className='flex items-center justify-center text-4xl'>
+        <div className='flex items-center justify-center text-8xl'>
           <h1>Premier Concierge Services in Las Vegas</h1>
         </div>
         <p>Warm Hospitality, your trusted partner for top-tier concierge services in the vibrant city of Las Vegas. Our expert team is here to enhance your Las Vegas experience by providing unparalleled assistance, insights, and access to the city's finest attractions and entertainment.</p>

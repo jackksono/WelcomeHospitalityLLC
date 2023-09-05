@@ -11,7 +11,7 @@ const HospitalityConsulting = () => {
 
       <div className='flex flex-col items-center justify-center h-auto pb-20 my-20 text-white lg:px-12 font-Italiana'>
       <div className='w-3/4 space-y-4 text-left'>
-        <div className='flex items-center justify-center text-4xl'>
+        <div className='flex items-center justify-center text-8xl'>
           <h1>Premier Hospitality Consulting in Las Vegas</h1>
         </div>
         <p>At Warm Hospitality, we pride ourselves on delivering comprehensive and unparalleled hospitality consulting services that are tailored to your unique needs and aspirations. With years of industry expertise, our team of seasoned professionals possesses an intricate understanding of the hospitality landscape, enabling us to provide you with strategic guidance and solutions that drive excellence and profitability.</p>
