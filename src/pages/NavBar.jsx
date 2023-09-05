@@ -9,9 +9,11 @@ import AboutUs from "./AboutUs"
 import Logo from '../Images/Logos/Logo.png'
 import Loading from '../pages/Loading'
 
-const ConciergeService = lazy(() => import('../pages/ServicesFolder/ConciergeService'))
-const EventPlanning = lazy(() => import('../pages/ServicesFolder/EventPlanning'))
-const HospitalityConsulting = lazy(() => import('../pages/ServicesFolder/HospitalityConsulting'))
+const ConciergeService = lazy(() => import('../pages/ServicesFolder/ConciergeService'));
+const EventPlanning = lazy(() => import('../pages/ServicesFolder/EventPlanning'));
+const HospitalityConsulting = lazy(() => import('../pages/ServicesFolder/HospitalityConsulting'));
+const BrandMarketing = lazy(() => import('../pages/ServicesFolder/BrandMarketing'));
+const WebDevelopment = lazy(() => import('../pages/ServicesFolder/WebDevelopment'))
 
 
 const NavBar = () => {
@@ -112,7 +114,7 @@ const NavBar = () => {
                       </Link>
                       {isDropDownOpen && (
                       <div
-                        className="absolute z-10 flex justify-center text-center duration-1000 border border-black -left-24 bg-stone-900 space-x-7 sm:h-16 top-10"
+                        className="absolute z-10 flex justify-center text-center duration-1000 border border-black -left-52 bg-stone-900 space-x-7 sm:h-16 top-10"
                         onMouseEnter={handleMouseEnterDropdown}
                         onMouseLeave={handleMouseLeaveDropdown}
                       >
@@ -143,6 +145,26 @@ const NavBar = () => {
                             </button>
                           </Link>
                         </div>
+
+                        <div className="flex-1">
+                          <Link to='/brand-marketing'>
+                            <button 
+                            className="w-full p-2 text-sm text-left text-white font-Italiana hover:text-stone-900 hover:bg-white"
+                            onClick={() => {setOnHomePage(false)}}>
+                              Brand Marketing
+                            </button>
+                          </Link>
+                        </div>
+
+                        <div className="flex-1">
+                          <Link to='/web-development'>
+                            <button 
+                            className="w-full p-2 text-sm text-left text-white font-Italiana hover:text-stone-900 hover:bg-white"
+                            onClick={() => {setOnHomePage(false)}}>
+                              Web Development
+                            </button>
+                          </Link>
+                        </div>
                       </div>
                     )}
 
@@ -168,6 +190,8 @@ const NavBar = () => {
         <Route path="/concierge-services" element={<ConciergeService/>}/>
         <Route path="/event-planning" element={<EventPlanning/>}/>
         <Route path="/hospitality-consulting" element={<HospitalityConsulting/>}/>
+        <Route path="/brand-marketing" element={<BrandMarketing/>}/>
+        <Route path="/web-development" element={<WebDevelopment/>}/>
 
       </Routes>
       </Suspense>

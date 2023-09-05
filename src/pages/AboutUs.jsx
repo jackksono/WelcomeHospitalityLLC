@@ -15,7 +15,7 @@ const AboutUs = () => {
             </div>
             <div className="flex items-center justify-center pt-12 overflow-auto text-3xl text-center lg:-z-0 lg:h-3/4 bg-stone-900 font-Italiana">
                 <div className="flex flex-col">
-                    <h1 className="text-white lg:text-8xl sm:text-4xl lg:mt-0">WHO WE ARE</h1>
+                    <h1 className="text-white underline lg:text-8xl sm:text-4xl lg:mt-0">WHO WE ARE</h1>
                     <p className="pt-4 mx-5 text-white lg:text-lg xl:leading-8 xl:text-xl md:text-[20px] sm:text-[15px] text-xs sm:mx-5 leading-5 lg:pt-7 lg:m-10 sm:leading-[2rem] xl:mx-40">
                         Welcome to Warm Hospitality, where passion, expertise, and creativity converge to redefine the world of hospitality. 
                         With a shared love for the art of hospitality and a wealth of experience in food and beverage, we bring a unique blend of 
@@ -31,7 +31,7 @@ const AboutUs = () => {
 ;
             <div className="flex justify-center min-h-screen w-screen text-3xl lg:z-10 text-center mt-[-50px] sm:mt-[-100px] lg:h-auto bg-stone-900 font-Italiana">
                 <div className="flex flex-col items-center justify-center pt-5 text-center text-white sm:text-4xl lg:text-8xl ">
-                    <h1 className="">MEET THE TEAM</h1>
+                    <h1 className="underline">MEET THE TEAM</h1>
 
                     <img src={TeamPicture} alt="TeamPicture" className="object-cover w-3/4 mt-5 rounded-lg shadow-sm sm:w-1/4 sm:pt-10 sm:mt-0 lg:mt-16 xl:mt-[-50px] lg:w-2/5 lg:pt-0 xl:w-2/5 xl:h-5/6 xl:transform xl:scale-75"></img>
 
